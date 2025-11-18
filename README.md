@@ -39,7 +39,7 @@ Below are the **three actionable vulnerabilities** (High + Medium) identified on
 
 ### **1. Python Library Brotli ≤ 1.1.0 DoS Vulnerability**  
 - **Severity:** High  
-- **Plugin ID:** 274433 1  
+- **Plugin ID:** 274433
 - **Description:** An outdated Brotli compression library could allow remote attackers to trigger a denial of service through specially crafted input.  
 - **Impact:** Potential service interruption or abnormal resource consumption when the library processes malicious data.  
 - **Remediation:**  
@@ -57,7 +57,7 @@ Below are the **three actionable vulnerabilities** (High + Medium) identified on
 
 ### **2. SSL Certificate Cannot Be Trusted**  
 - **Severity:** Medium  
-- **Plugin ID:** 51192 2  
+- **Plugin ID:** 51192
 - **Description:** A service running on the host uses a self-signed or untrusted certificate. Nessus correctly flags this even for local or testing environments.  
 - **Impact:** Susceptible to man-in-the-middle attacks if exposed beyond localhost.  
 - **Remediation Options:**  
@@ -78,7 +78,7 @@ Below are the **three actionable vulnerabilities** (High + Medium) identified on
 
 ### **3. Ruby REXML < 3.4.2 DoS Vulnerability**  
 - **Severity:** Medium  
-- **Plugin ID:** 265895 3  
+- **Plugin ID:** 265895
 - **Description:** An outdated Ruby XML parser library contains a vulnerability that can cause denial of service via malicious XML.  
 - **Impact:** Applications relying on the library may crash or become unresponsive.  
 - **Remediation:**  
@@ -100,26 +100,10 @@ Below are the **three actionable vulnerabilities** (High + Medium) identified on
 4. Ran the full scan and monitored progress.  
 5. Exported results as PDF and CSV.  
 6. Reviewed findings, isolated the high- and medium-risk items, and implemented remediation steps directly on the system.  
-7. Documented all evidence (screenshots + reports) as required.
+
 
 ---
 
-## 5. Evidence Included  
-This repository contains:
-
-- `/report/Task3_nessus_report.pdf` (full Nessus report)  
-- `/report/Task3_nessus_report.csv`  
-- `/screenshots/` — includes:
-  - Scan configuration  
-  - Scan running  
-  - Scan results summary (0 High, 1 Medium, 2 Medium, etc.)  
-  - Vulnerability detail pages  
-
-Screenshots serve as proof of execution, as required in the Task 3 instructions.
-
----
 
 ## 6. Conclusion  
-The system did not contain any critical vulnerabilities, but it did contain several outdated libraries and an untrusted SSL certificate configuration. The high-severity Python Brotli vulnerability and the two medium-severity findings were remediated through package updates or configuration adjustments. The remaining informational items do not require immediate action but provide useful insight into system configuration and installed software.
-
-All required outputs—scan results, exported reports, and documentation—are included in this repository.
+The scan detected no critical vulnerabilities, but it did identify an outdated Brotli library and two medium-severity issues involving SSL configuration and Ruby REXML. These issues were addressed through system updates or configuration adjustments. Informational findings represented standard system software and service enumeration commonly seen on Linux hosts and did not require remediation. The system is now in a more secure and updated state following the applied fixes.
