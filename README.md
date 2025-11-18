@@ -98,7 +98,7 @@ Below are the **three actionable vulnerabilities** (High + Medium) identified on
 2. Created a **Basic Network Scan** targeting the local host.  
 3. Configured **SSH authenticated scanning** to enable accurate detection of packages and system-level vulnerabilities.  
 4. Ran the full scan and monitored progress.  
-5. Exported results as PDF and CSV.  
+5. Exported results as PDF.  
 6. Reviewed findings, isolated the high- and medium-risk items, and implemented remediation steps directly on the system.  
 
 
