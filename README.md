@@ -11,8 +11,6 @@ This repository documents the full process and results of performing a **basic v
 **Scan Mode:** Authenticated via SSH (valid credentials provided)  
 **Report Files:**  
 - PDF report  
-- CSV export  
-- Screenshots of key stages of the scan
 
 ---
 
